@@ -12,7 +12,7 @@
       "Minor": 0,
       "Patch": 0
    },
-   "instanceNameFormat": "printAllVariables",
+   "instanceNameFormat": "Print all variables",
    "execution":
     {"Node":{"target":"printAllVariables.js"}}
    

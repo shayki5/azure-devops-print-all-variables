@@ -4,8 +4,10 @@ async function run() {
     try {
         //do your actions
         const allVariables = tl.getVariables()
+        allVariables.sort()
         allVariables.forEach(element => {
-            console.log(element.name + "=> " + element.value)
+            console.log("All the variables in this format: [variable name] => value")
+            console.log(element.name + " => " + element.value)
         });
         
     } catch (err) {
