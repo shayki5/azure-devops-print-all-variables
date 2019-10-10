@@ -1,32 +1,15 @@
 ## Print All Variables ##
 
-Print to the screen all the available varaibles and their values for this job. Cross platform (work on Windows/Linux/Mac)
+Print to the screen all the available varaibles and their values for this job. Cross platform (work on Windows/Linux/Mac).
 
-### Quick steps to get started ###
+### Usage ###
 
-![](/static/images/Screen1.png)
+Just add the task to your pipeline and you will get in the output all the available varaibles and their values.
 
-//TODO:Add a walk-through of key features to your extension. See [Roll-up Board](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) for an example.
+Work on Windows/Linux/Mac.
 
 ### Known issue(s)
 
 - None
 
-### Learn More
-
-The [source](//TODO:Point to your repo or remove this) to this extension is available. Feel free to take, fork, and extend.
-
-//TODO:Update the 3rd party notices file or remove the view notices reference.
-[View Notices](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/ShaykiAbramczyk/extension/printAllVariables/latest/assetbyname/ThirdPartyNotices.txt) for third party software included in this extension.
-
-### Minimum supported environments ###
-
-- Visual Studio Team Services
-
-### Contributors ###
-
-We thank the following contributor(s) for this extension: @TODO@-Add and credit contributors.
-
-### Feedback ###
-- Add a review below.
-- Send us an [email](mailto://TODO:Add your email address).
+<div>Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>

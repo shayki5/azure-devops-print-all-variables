@@ -5,8 +5,7 @@ async function run() {
         //do your actions
         const allVariables = tl.getVariables()
         allVariables.forEach(element => {
-            tl.setStdStream(element.name)
-            tl.setStdStream(element.value)
+            console.log(element.name + "=> " + element.value)
         });
         
     } catch (err) {
