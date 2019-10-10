@@ -4,13 +4,18 @@ async function run() {
     try {
         //do your actions
         const allVariables = tl.getVariables()
-        var sorted = [];
-        for(var key in allVariables) {
-            sorted[sorted.length] = key;
-        }
-        sorted.sort();
+        var sortedArray: tl.VariableInfo[] = allVariables.sort((obj1, obj2) => {
+            if (obj1.name > obj2.name) {
+                return 1;
+            }
+        
+            if (obj1.name < obj2.name) {
+                return -1;
+            }
+            return 0;
+        });
         console.log("All the variables in this format: [variable name] => value")
-        sorted.forEach(element => {
+        sortedArray.forEach(element => {
             console.log(element.name + " => " + element.value)
         });
         
