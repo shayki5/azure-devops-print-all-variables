@@ -8,8 +8,19 @@ Just add the task to your pipeline and you will get in the output all the availa
 
 Work on Windows/Linux/Mac.
 
-### Known issue(s)
+- In the classic editor:
 
-- None
+![Task](https://i.imgur.com/RBYhCEL.png)
+
+- In YAML pipelines:
+
+```
+steps:
+- task: printAllVariables@1
+  displayName: 'Print all variables'
+```
+
+  
+
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
