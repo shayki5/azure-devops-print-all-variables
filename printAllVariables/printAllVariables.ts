@@ -5,8 +5,8 @@ async function run() {
         //do your actions
         const allVariables = tl.getVariables()
         allVariables.sort()
+        console.log("All the variables in this format: [variable name] => value")
         allVariables.forEach(element => {
-            console.log("All the variables in this format: [variable name] => value")
             console.log(element.name + " => " + element.value)
         });
         
