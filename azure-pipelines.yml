@@ -1,0 +1,52 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  version: $[ counter('revision',0) ]
+
+steps:
+- task: TfxInstaller@1
+  displayName: 'Use Node CLI for Azure DevOps (tfx-cli): v0.6.x'
+
+- task: Npm@1  
+  displayName: 'npm install'
+  inputs:
+    command: 'install'
+    workingDir: '$(build.sourcesdirectory)'
+
+- task: Npm@1  
+  displayName: 'npm install'
+  inputs:
+    command: 'install'
+    workingDir: '$(build.sourcesdirectory)/printAllVariables'
+- task: CmdLine@2
+  inputs:
+    script: 'tsc'
+
+- task: PackageVSTSExtension@1
+  displayName: 'Package Extension - Private'
+  inputs:
+    rootFolder: '$(Build.SourcesDirectory)'
+    extensionVersion: '1.0.$(Version)'
+    extensionVisibility: private
+    extensionPricing: free
+    extensionId: 'printAllVariablesDev'
+    outputPath: '$(Build.ArtifactStagingDirectory)/vsix'
+
+- task: PackageVSTSExtension@1
+  displayName: 'Package Extension - Public'
+  inputs:
+    rootFolder: '$(Build.SourcesDirectory)'
+    extensionVersion: '1.0.$(Version)'
+    extensionVisibility: public
+    extensionPricing: free
+    updateTasksVersion: false
+    outputPath: '$(Build.ArtifactStagingDirectory)/vsix'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\vsix'
