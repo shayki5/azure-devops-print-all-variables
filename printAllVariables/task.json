@@ -1,0 +1,37 @@
+{
+   "id": "1f1d8f0b-8781-4ac4-aed1-0d51ed3bf95f",
+   "name": "printAllVariables",
+   "friendlyName": "Print all variables",
+   "description": "Print to the screen all the available varaibles and their values for this job. Cross platform (work on Windows/Linux/Mac)",
+   "helpMarkDown": "[More Information](https://url.to/yourmarkdown)",
+   "category": "Utility",
+   "visibility": ["Build","Release"],
+   "author": "",
+   "version": {
+      "Major": 1,
+      "Minor": 0,
+      "Patch": 0
+   },
+   "demands": [],
+   "inputs": [
+      {
+         "name": "variable1",
+         "type": "filePath",
+         "label": "Path to Solution File",
+         "defaultValue": "",
+         "required": true
+      },
+      {
+         "name": "variable2",
+         "type": "string",
+         "label": "Sample text variable",
+         "defaultValue": "",
+         "required": false,
+         "helpMarkDown": "This will give you a hover-over tooltip"
+      }
+   ],
+   "instanceNameFormat": "printAllVariables",
+   "execution":
+    {"Node":{"target":"printAllVariables.js"}}
+   
+}

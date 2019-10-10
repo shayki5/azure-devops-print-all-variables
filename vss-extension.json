@@ -1,0 +1,51 @@
+{
+  "manifestVersion": 1,
+  "id": "printAllVariables",
+  "version": "1.0.0",
+  "name": "Print all variables",
+  "description": "Print to the screen all the available varaibles and their values for this job. Cross platform (work on Windows/Linux/Mac)",
+  "publisher": "ShaykiAbramczyk",
+  "icons": {
+    "default": "static/images/icon.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": [
+    "Azure Pipelines"
+  ],
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "content": {
+    "license": {
+      "path": "LICENSE"
+    },
+    "details": {
+      "path": "README.md"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/shayki5/azure-devops-print-all-variables"
+  },
+  "files": [
+    {
+      "path": "printAllVariables"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "printAllVariables",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "printAllVariables"
+      }
+    }
+  ]
+}
