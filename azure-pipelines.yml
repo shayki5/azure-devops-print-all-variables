@@ -26,7 +26,7 @@ steps:
   inputs:
     script: 'tsc'
 
-- task: PackageVSTSExtension@1
+- task: PackageAzureDevOpsExtension@3
   displayName: 'Package Extension - Private'
   inputs:
     rootFolder: '$(Build.SourcesDirectory)'
@@ -36,7 +36,7 @@ steps:
     extensionId: 'printAllVariablesDev'
     outputPath: '$(Build.ArtifactStagingDirectory)/vsix'
 
-- task: PackageVSTSExtension@1
+- task: PackageAzureDevOpsExtension@3
   displayName: 'Package Extension - Public'
   inputs:
     rootFolder: '$(Build.SourcesDirectory)'
