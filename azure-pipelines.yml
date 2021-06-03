@@ -8,8 +8,10 @@ variables:
   version: $[ counter('revision',0) ]
 
 steps:
-- task: TfxInstaller@1
-  displayName: 'Use Node CLI for Azure DevOps (tfx-cli): v0.6.x'
+- task: TfxInstaller@3
+  inputs:
+    version: 'v0.8.x'
+  displayName: 'Use Node CLI for Azure DevOps (tfx-cli): v0.8.x'
 
 - task: Npm@1  
   displayName: 'npm install'
