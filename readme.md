@@ -4,7 +4,7 @@ Build | Release | Extension
 
 ## Print All Variables ##
 
-Print to the screen all the available varaibles and their values for this job. Cross platform (work on Windows/Linux/Mac).
+Print to the screen all the available varaibles and their values for this job. **Cross platform (work on Windows/Linux/Mac)**.
 
 ### Usage ###
 
