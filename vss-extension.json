@@ -31,6 +31,28 @@
     "type": "git",
     "uri": "https://github.com/shayki5/azure-devops-print-all-variables"
   },
+  "content": {
+    "details": {
+      "path": "README.MD"
+    },
+    "license": {
+      "path": "LICENSE.md"
+    },
+    "privacy": {
+      "path": "PRIVACY.md"
+    }
+  },
+  "links": {
+    "support": {
+      "uri": "https://github.com/shayki5/azure-devops-print-all-variables/issues"
+    },
+    "license": {
+      "uri": "https://github.com/shayki5/azure-devops-print-all-variables/blob/master/license.md"
+    },
+    "privacypolicy": {
+      "uri": "https://github.com/shayki5/azure-devops-print-all-variables/blob/master/PRIVACY.md"
+    }
+  },
   "files": [
     {
       "path": "printAllVariables"
