@@ -9,7 +9,7 @@
     "vsts-task-lib": "^2.0.5"
   },
   "devDependencies": {
-    "@types/node": "^8.0.7",
+    "@types/node": "^16.11.39",
     "@types/q": "1.0.2"
   }
 }
