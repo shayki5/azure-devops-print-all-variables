@@ -14,6 +14,6 @@
    },
    "instanceNameFormat": "Print all variables",
    "execution":
-    {"Node":{"target":"printAllVariables.js"}}
+    {"Node16":{"target":"printAllVariables.js"}}
    
 }
