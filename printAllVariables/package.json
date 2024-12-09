@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.39",
-    "@types/q": "1.0.2"
+    "@types/q": "1.5.8"
   }
 }
