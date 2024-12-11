@@ -7,7 +7,7 @@
     "install-task-lib": "cd printAllVariables && npm install --save-dev"
   },
   "devDependencies": {
-    "@types/node": "^16.11.39",
+    "@types/node": "^22.10.2",
     "tfx-cli": "^0.17.0",
     "typescript": "2.3.4"
   },
